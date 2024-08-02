@@ -11,7 +11,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  background:#9889a8;
+  background:#aaa2b3;
   font-size: 100%;
   
 }
@@ -128,7 +128,7 @@ button {
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
-  box-shadow: 0 4px 0 0 #b48ece;
+  box-shadow: 0 4px 0 0 #e9dff0;
   cursor: pointer;
   position: fixed;
   z-index: 10;
@@ -137,7 +137,7 @@ button {
 }
 button:hover {
   color: white;
-  background:black;
+  background:#282E33;
   top: 17px;
 }
 
