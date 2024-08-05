@@ -78,6 +78,7 @@ li span {
   height: 100%;
   transform-style: preserve-3d;
   transition: all 600ms linear;
+  backface-visibility: hidden;
 }
 .container .card .face {
   position: absolute;
