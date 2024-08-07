@@ -78,7 +78,9 @@ li span {
   height: 100%;
   transform-style: preserve-3d;
   transition: all 600ms linear;
-  backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
+  -moz-backface-visibility: hidden;
+  position: relative;
 }
 .container .card .face {
   position: absolute;
@@ -86,11 +88,14 @@ li span {
   height: 100%;
   backface-visibility: hidden;
   background: #282e33;
+  z-index: 1; /* Default lower z-index */
+  -moz-backface-visibility: hidden;
 }
 .container .card .front {
   overflow: hidden;
   z-index: 2;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 .container .card .front h1 {
   font: 4em "Condiment", cursive;
@@ -109,11 +114,29 @@ li span {
   padding: 30px;
   color: #dddddd;
   background: #4c3f4f;
-  z-index: 1;
+  z-index: 1; /* Initially below the front face */
   font-family: "Lato", sans-serif;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 
   
+}
+
+.container .card h1 {
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.container .card .back a {
+  z-index: 3;
+  pointer-events: auto; /* Ensure links are clickable */
+}
+
+.container .card .back span {
+  z-index: 3;
+}
+.container .card .back ul li{
+  z-index: 3;
 }
 
 
@@ -122,9 +145,15 @@ li span {
   right: 30px;
   bottom: 30px;
 }
+
 .container:hover .card {
   transform: rotateX(180deg);
 }
+
+.container:hover .card .back {
+  z-index: 3;
+}
+
 
 button {
   text-transform: uppercase;
@@ -182,6 +211,7 @@ button:hover {
 /* Social Media Icons Styling */
 .social-icons {
   margin-top: 20px;
+  z-index:3;
 }
 
 .social-icons a {
