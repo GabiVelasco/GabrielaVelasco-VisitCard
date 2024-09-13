@@ -68,7 +68,7 @@ li span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 550px;
   height: 330px;
   z-index: 1;
   perspective: 1000px;
@@ -121,6 +121,9 @@ li span {
 
   
 }
+
+img { margin: 0 auto;
+display: block;}
 
 .container .card h1 {
   -moz-backface-visibility: hidden;
@@ -209,8 +212,12 @@ button:hover {
 
 
 /* Social Media Icons Styling */
+.right {
+  margin: 0 auto; 
+  padding: 0 0px 0 60px;
+}
 .social-icons {
-  margin-top: 20px;
+  margin: 0 auto;
   z-index:3;
 }
 
@@ -236,12 +243,9 @@ button:hover {
 
 .myphoto {
   width: 100px;
-  height:auto !important;
-  padding: 1em;
-  display: block;
-  padding-top:2.5em;
-  padding-left: 0.5em;
-  margin-right:2em;
+ padding: 10px;
+  
+  margin:10px 10px 10px 10px auto;
 }
 
 .flex { display: flex; flex-direction: row;}
