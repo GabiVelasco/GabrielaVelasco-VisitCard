@@ -30,7 +30,7 @@ This is an online visit card developed by Gabriela Velasco. The website serves a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/GabiVelasco/GabiwebVisitCard.git
+   git clone https://github.com/GabiVelasco/GabrielaVelasco-VisitCard.git
    ```
 2. Open the `index.html` file in your browser.
 
