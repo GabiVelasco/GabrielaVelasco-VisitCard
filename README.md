@@ -5,6 +5,8 @@
 
 This is an online visit card developed by Gabriela Velasco. The website serves as a digital representation of my contact and professional information, featuring interactive elements such as flipping cards and responsive layout adjustments. The project ensures cross-browser compatibility, offering a smooth experience in both Chrome and Firefox.
 
+https://github.com/GabiVelasco/Online-Visit-Card
+
 ## Key Features
 
 - **Interactive Card Flip**: Implemented `backface-visibility: hidden` to enable a smooth card flip effect for both Chrome and Firefox browsers.
